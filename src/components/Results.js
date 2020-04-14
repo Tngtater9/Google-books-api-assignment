@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 
 export default class Results extends Component {
-  componentDidUpdate () {
-    this.props.reset();
-  }
   renderResults = () => {
     const book = this.props.books.map((book) => (
       <React.Fragment key={book.id}>
